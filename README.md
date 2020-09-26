@@ -8,8 +8,13 @@ Based on https://github.com/smrchy/rest-sessions
 
 Use the following environment variables to set the listening port and Redis host and port:
 
-* RS_PORT
-* RS_REDISHOST
-* RS_REDISPORT
-* RS_NAMESPACE (Redis namespace prefix: defaults to `rs`)
-* RS_LOGLEVEL (a morgan loglevel or `none` to disable logging)
+* `RS_PORT`
+* `RS_REDISHOST`
+* `RS_REDISPORT`
+* `RS_NAMESPACE` (Redis namespace prefix: defaults to `rs`)
+* `RS_LOGLEVEL` (a morgan loglevel or `none` to disable logging)
+* `RS_REDISURL` - `redis://<user>:<password>@<REDISHOST>:<REDISPORT>`
+
+Use of `RS_REDISURL` overrides use of `RS_REDISHOST` and
+`RS_REDISPORT`.
+
